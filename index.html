@@ -1,85 +1,127 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Modish Collection is a trusted school uniform manufacturer offering high-quality school t-shirts, track pants, jackets, and customised promotional shirts across India.">
-  <meta name="keywords" content="school uniform manufacturer, school t-shirts, track pants, tracksuits, jackets, promotional t-shirts, customised school shirts, school uniform supplier India, Ludhiana uniforms">
-  <meta name="author" content="Modish Collection">
-  <title>Modish Collection | School Uniform Manufacturer & Custom T-Shirts</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Modish Collection - School Uniforms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0055a5;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product {
+      flex: 1 1 45%;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    form button {
+      background-color: #0055a5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="overlay">
-      <h1>Modish Collection</h1>
-      <p>Stylish School Uniforms & Custom T-Shirts — PAN India</p>
-    </div>
+  <header>
+    <h1>Modish Collection</h1>
+    <p>Smart. Stylish. School Ready.</p>
   </header>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">About Us</a></li>
-      <li class="dropdown">
-        <a href="#products" class="dropbtn">All Products</a>
-        <div class="dropdown-content">
-          <a href="#school-tshirts">School T-Shirts</a>
-          <a href="#track-pants">Track Pants</a>
-          <a href="#tracksuits">Tracksuits</a>
-          <a href="#jackets">Jackets</a>
-          <a href="#printed-tshirts">Printed T-Shirts</a>
-          <a href="#embroidered-shirts">Logo Embroidered Shirts</a>
-          <a href="#event-shirts">Event/Corporate Shirts</a>
-        </div>
-      </li>
-      <li><a href="#quote">Get a Quote</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#quote">Get a Quote</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
-    <aside class="sidebar">
-      <h3>Categories</h3>
-      <ul>
-        <li><a href="#school-tshirts">School T-Shirts</a></li>
-        <li><a href="#track-pants">Track Pants</a></li>
-        <li><a href="#tracksuits">Tracksuits</a></li>
-        <li><a href="#jackets">Jackets</a></li>
-        <li><a href="#printed-tshirts">Printed T-Shirts</a></li>
-        <li><a href="#embroidered-shirts">Logo Embroidered Shirts</a></li>
-        <li><a href="#event-shirts">Event/Corporate Shirts</a></li>
-      </ul>
-    </aside>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Modish Collection, we specialize in high-quality, comfortable, and affordable school uniforms. We cater to schools of all sizes and offer customization options to meet specific requirements.</p>
+  </section>
 
-    <main class="products">
-      <section id="school-tshirts"><h2>School T-Shirts</h2><div class="gallery">[Add images]</div></section>
-      <section id="track-pants"><h2>Track Pants</h2><div class="gallery">[Add images]</div></section>
-      <section id="tracksuits"><h2>Tracksuits</h2><div class="gallery">[Add images]</div></section>
-      <section id="jackets"><h2>Jackets</h2><div class="gallery">[Add images]</div></section>
-      <section id="printed-tshirts"><h2>Printed T-Shirts</h2><div class="gallery">[Add images]</div></section>
-      <section id="embroidered-shirts"><h2>Logo Embroidered Shirts</h2><div class="gallery">[Add images]</div></section>
-      <section id="event-shirts"><h2>Event/Corporate Shirts</h2><div class="gallery">[Add images]</div></section>
-    </main>
-  </div>
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Boys' Uniforms</h3>
+        <p>Shirts, pants, sweaters, and more for boys of all school levels.</p>
+      </div>
+      <div class="product">
+        <h3>Girls' Uniforms</h3>
+        <p>Skirts, tunics, blouses, sweaters, and full sets for all age groups.</p>
+      </div>
+      <div class="product">
+        <h3>Accessories</h3>
+        <p>Belts, ties, socks, caps, and school-approved extras.</p>
+      </div>
+      <div class="product">
+        <h3>Promotional & Customized Shirts</h3>
+        <p>Custom-printed t-shirts for school events, teams, and branding needs.</p>
+      </div>
+    </div>
+  </section>
 
-  <section id="quote" class="quote-form">
+  <section id="quote">
     <h2>Get a Quote</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="text" placeholder="Product Type" required />
-      <input type="number" placeholder="Quantity" required />
-      <textarea placeholder="Additional Details"></textarea>
-      <button type="submit">Submit</button>
+    <form action="mailto:jahanvisingla2708@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="school" placeholder="School Name">
+      <textarea name="items" placeholder="What items do you need? Include quantity and size info." required></textarea>
+      <textarea name="message" placeholder="Additional details (optional)"></textarea>
+      <button type="submit">Submit Request</button>
     </form>
   </section>
 
-  <footer id="contact">
+  <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: jahanvisingla2708@gmail.com</p>
-    <p>Phone: 6283902892</p>
-    <p>Manufacturing Unit: Ludhiana, India</p>
+    <p>Email: <a href="mailto:jahanvisingla2708@gmail.com">jahanvisingla2708@gmail.com</a></p>
+    <p>Phone: <a href="tel:6283902892">6283902892</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Modish Collection. All rights reserved.</p>
   </footer>
 </body>
 </html>
