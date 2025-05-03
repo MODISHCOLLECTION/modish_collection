@@ -1,71 +1,77 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
 }
-.hero {
-  background: url('../images/school-kids-bg.jpg') center/cover no-repeat;
+
+header.hero {
+  background: url('images/Untitled design.png') center/cover no-repeat;
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   color: white;
   text-align: center;
-  position: relative;
 }
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
+
+.navbar {
+  background: #222;
+  padding: 0;
+}
+
 .navbar ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #333;
-  justify-content: center;
 }
+
 .navbar li {
   position: relative;
 }
+
 .navbar a {
   display: block;
-  padding: 14px 20px;
+  padding: 15px 20px;
   color: white;
   text-decoration: none;
 }
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: #575757;
+
+.navbar a:hover {
+  background: #444;
 }
-.dropdown-content,
-.sub-dropdown {
+
+.dropdown-content {
   display: none;
   position: absolute;
-  background-color: #444;
-  min-width: 200px;
+  background: #444;
   z-index: 1;
 }
-.dropdown-content a,
-.sub-dropdown a {
-  padding: 10px 15px;
-}
-.dropdown:hover .dropdown-content,
-.dropdown-content:hover .sub-dropdown {
+
+.dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown-content a:hover {
-  background-color: #555;
+
+.dropdown-content a {
+  padding: 10px;
+  display: block;
 }
-.sub-dropdown {
-  left: 100%;
-  top: 0;
+
+main {
+  padding: 30px;
+  text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
-  }
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
