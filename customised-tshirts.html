@@ -14,18 +14,27 @@
     }
 
     header {
-      background-color: #333;
+      background: url('Untitled design.png') center/cover no-repeat;
       color: white;
-      padding: 20px;
       text-align: center;
-      margin-top: 50px;
+      padding: 100px 20px 60px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 20px;
+      margin: 10px 0 0;
     }
 
     .navbar {
       background: #444;
       color: white;
       padding: 10px 0;
-      position: fixed;
+      position: sticky;
       top: 0;
       width: 100%;
       z-index: 1000;
@@ -37,6 +46,7 @@
       list-style: none;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     .navbar li {
@@ -71,10 +81,6 @@
 
     .dropdown:hover .dropdown-content {
       display: block;
-    }
-
-    .spacer {
-      height: 50px;
     }
 
     .category-section {
@@ -127,7 +133,12 @@
         <a href="#" class="dropbtn">Our Products</a>
         <div class="dropdown-content">
           <a href="school-uniforms.html">School Uniforms</a>
+          <a href="tshirts.html">&nbsp;&nbsp;T-Shirts</a>
+          <a href="trackpants.html">&nbsp;&nbsp;Trackpants</a>
+          <a href="tracksuits.html">&nbsp;&nbsp;Tracksuits</a>
+          <a href="jackets.html">&nbsp;&nbsp;Jackets</a>
           <a href="customised-tshirts.html">Customised T-Shirts</a>
+          <a href="promotional-tshirts.html">&nbsp;&nbsp;Promotional T-Shirts</a>
         </div>
       </li>
       <li><a href="quote.html">Get a Quote</a></li>
@@ -135,23 +146,21 @@
     </ul>
   </div>
 
-  <div class="spacer"></div>
-
   <header>
     <h1>Customised T-Shirts</h1>
-    <p>Explore our categories of customised and promotional t-shirts</p>
+    <p>Explore our customizable t-shirt range</p>
   </header>
 
   <div class="category-section">
     <h2>T-Shirts</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="images/ct1.jpg" alt="Custom T-Shirt 1" />
-        <div class="description">Custom T-Shirt 1 - ₹350</div>
+        <img src="images/ct1.jpg" alt="Custom T-Shirt 1">
+        <div class="description">Custom T-Shirt 1 - ₹280</div>
       </div>
       <div class="gallery-item">
-        <img src="images/ct2.jpg" alt="Custom T-Shirt 2" />
-        <div class="description">Custom T-Shirt 2 - ₹370</div>
+        <img src="images/ct2.jpg" alt="Custom T-Shirt 2">
+        <div class="description">Custom T-Shirt 2 - ₹300</div>
       </div>
     </div>
   </div>
@@ -160,14 +169,15 @@
     <h2>Promotional T-Shirts</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="images/pt1.jpg" alt="Promo T-Shirt 1" />
-        <div class="description">Promo T-Shirt 1 - ₹300</div>
+        <img src="images/pts1.jpg" alt="Promo T-Shirt 1">
+        <div class="description">Promo T-Shirt 1 - ₹230</div>
       </div>
       <div class="gallery-item">
-        <img src="images/pt2.jpg" alt="Promo T-Shirt 2" />
-        <div class="description">Promo T-Shirt 2 - ₹320</div>
+        <img src="images/pts2.jpg" alt="Promo T-Shirt 2">
+        <div class="description">Promo T-Shirt 2 - ₹250</div>
       </div>
     </div>
   </div>
 </body>
 </html>
+
