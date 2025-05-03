@@ -3,78 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>School Uniforms | Modish Collection</title>
+  <title>School Uniforms - Modish Collection</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .category-section {
+      margin: 40px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+
+    .category-section h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-item {
+      background: white;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .description {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-
-  <header class="sub-header">
+  <header>
     <h1>School Uniforms</h1>
-    <p>Explore our high-quality school uniform range</p>
+    <p>Explore our categories of school uniforms</p>
   </header>
 
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#tshirts">T-Shirts</a></li>
-      <li><a href="#trackpants">Track Pants</a></li>
-      <li><a href="#tracksuits">Tracksuits</a></li>
-      <li><a href="#jackets">Jackets</a></li>
-    </ul>
-  </nav>
-
-  <section class="products-gallery">
-    <h2 id="tshirts">School T-Shirts</h2>
+  <div class="category-section">
+    <h2>School T-Shirts</h2>
     <div class="gallery">
-      <div class="product">
-        <img src="images/t1.jpg" alt="T-Shirt 1">
-        <div class="desc">Cotton School T-Shirt<br><strong>₹180</strong></div>
+      <div class="gallery-item">
+        <img src="images/t1.jpg" alt="T-Shirt 1" />
+        <div class="description">T-Shirt 1 - ₹250</div>
       </div>
-      <div class="product">
-        <img src="images/t2.jpg" alt="T-Shirt 2">
-        <div class="desc">Polyester School T-Shirt<br><strong>₹160</strong></div>
+      <div class="gallery-item">
+        <img src="images/t2.jpg" alt="T-Shirt 2" />
+        <div class="description">T-Shirt 2 - ₹270</div>
       </div>
     </div>
+  </div>
 
-    <h2 id="trackpants">Track Pants</h2>
+  <div class="category-section">
+    <h2>Tracksuits</h2>
     <div class="gallery">
-      <div class="product">
-        <img src="images/tp1.jpg" alt="Track Pant 1">
-        <div class="desc">Striped Track Pant<br><strong>₹220</strong></div>
+      <div class="gallery-item">
+        <img src="images/tcs1.jpg" alt="Tracksuit 1" />
+        <div class="description">Tracksuit 1 - ₹800</div>
       </div>
-      <div class="product">
-        <img src="images/tp3.jpg" alt="Track Pant 2">
-        <div class="desc">Comfort Fit Pant<br><strong>₹210</strong></div>
+      <div class="gallery-item">
+        <img src="images/ts1.jpg" alt="Tracksuit 2" />
+        <div class="description">Tracksuit 2 - ₹850</div>
       </div>
-      <div class="product">
-        <img src="images/tp4.jpg" alt="Track Pant 3">
-        <div class="desc">Elastic Waist Trackpant<br><strong>₹190</strong></div>
+      <div class="gallery-item">
+        <img src="images/ts2.jpg" alt="Tracksuit 3" />
+        <div class="description">Tracksuit 3 - ₹900</div>
       </div>
     </div>
+  </div>
 
-    <h2 id="tracksuits">Tracksuits</h2>
+  <div class="category-section">
+    <h2>Track Pants</h2>
     <div class="gallery">
-      <div class="product">
-        <img src="images/ts1.jpg" alt="Tracksuit 1">
-        <div class="desc">Half-Zip Tracksuit<br><strong>₹450</strong></div>
+      <div class="gallery-item">
+        <img src="images/tp1.jpg" alt="Track Pant 1" />
+        <div class="description">Track Pant 1 - ₹350</div>
       </div>
-      <div class="product">
-        <img src="images/ts2.jpg" alt="Tracksuit 2">
-        <div class="desc">Full-Zip Tracksuit<br><strong>₹480</strong></div>
+      <div class="gallery-item">
+        <img src="images/tp3.jpg" alt="Track Pant 2" />
+        <div class="description">Track Pant 2 - ₹370</div>
       </div>
-      <div class="product">
-        <img src="images/tcs1.jpg" alt="Tracksuit Set">
-        <div class="desc">Cotton Blend Tracksuit Set<br><strong>₹520</strong></div>
+      <div class="gallery-item">
+        <img src="images/tp4.jpg" alt="Track Pant 3" />
+        <div class="description">Track Pant 3 - ₹390</div>
       </div>
     </div>
-
-    <!-- Add jackets later if you have images -->
-  </section>
-
-  <footer>
-    <p>Contact us: jahanvisingla2708@gmail.com | 6283902892</p>
-    <p>Modish Collection, Ludhiana</p>
-  </footer>
-
+  </div>
 </body>
 </html>
