@@ -3,17 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Modish Collection is a trusted school uniform manufacturer offering high-quality school t-shirts, track pants, jackets, and customised promotional shirts across India.">
-  <meta name="keywords" content="school uniform manufacturer, school t-shirts, track pants, tracksuits, jackets, promotional t-shirts, customised school shirts, school uniform supplier India, Ludhiana uniforms">
+  <meta name="description" content="Modish Collection - School Uniforms & Custom T-Shirts">
+  <meta name="keywords" content="school uniforms, t-shirts, customised, Ludhiana">
   <meta name="author" content="Modish Collection">
-  <title>Modish Collection | School Uniform Manufacturer & Custom T-Shirts</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Modish Collection | School Uniforms & Custom T-Shirts</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header.hero {
+      background: url('images/Untitled design.png') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 12px;
+    }
+
+    .navbar {
+      background: #222;
+      padding: 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background: #444;
+    }
+
+    .dropdown-content, .sub-dropdown {
+      display: none;
+      position: absolute;
+      background: #444;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      padding: 10px;
+      display: block;
+    }
+
+    main {
+      padding: 30px;
+      text-align: center;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
+
   <header class="hero">
     <div class="overlay">
       <h1>Modish Collection</h1>
-      <p>Stylish School Uniforms & Custom T-Shirts — PAN India</p>
+      <p>Stylish School Uniforms & Custom T-Shirts – PAN India</p>
     </div>
   </header>
 
@@ -21,21 +101,10 @@
     <ul>
       <li><a href="#about">About Us</a></li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Our Products</a>
+        <a href="#">Our Products</a>
         <div class="dropdown-content">
-          <a href="#">School Uniforms</a>
-          <div class="sub-dropdown">
-            <a href="#">School T-Shirts</a>
-            <a href="#">Track Pants</a>
-            <a href="#">Tracksuits</a>
-            <a href="#">Jackets</a>
-          </div>
-          <a href="#">Customised T-Shirts</a>
-          <div class="sub-dropdown">
-            <a href="#">Printed T-Shirts</a>
-            <a href="#">Logo Embroidered Shirts</a>
-            <a href="#">Event/Corporate Shirts</a>
-          </div>
+          <a href="school-uniforms.html">School Uniforms</a>
+          <a href="customised-tshirts.html">Customised T-Shirts</a>
         </div>
       </li>
       <li><a href="#quote">Get a Quote</a></li>
@@ -43,16 +112,15 @@
     </ul>
   </nav>
 
-  <section class="main-message">
+  <main>
     <h2>Welcome to Modish Collection</h2>
-    <p>Please use the navigation menu above to explore our School Uniform and Customised T-Shirt categories.</p>
-  </section>
+    <p>Your trusted partner for premium school uniforms and personalised T-shirts across India.</p>
+  </main>
 
   <footer id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: jahanvisingla2708@gmail.com</p>
-    <p>Phone: 6283902892</p>
+    <p>Contact us: jahanvisingla2708@gmail.com | 6283902892</p>
     <p>Manufacturing Unit: Ludhiana, India</p>
   </footer>
+
 </body>
 </html>
