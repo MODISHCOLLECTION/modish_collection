@@ -5,7 +5,7 @@ body {
 
 header.hero {
   background: url('images/Untitled design.png') center/cover no-repeat;
-  height: 30vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
