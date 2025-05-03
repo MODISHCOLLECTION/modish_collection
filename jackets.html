@@ -1,1 +1,163 @@
-<!DOCTYPE html><html><head><title>jackets.html</title></head><body><h1>Jackets</h1><p>Warm and stylish school jackets.</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jackets - Modish Collection</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: url('Untitled design.png') center/cover no-repeat;
+      color: black;
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 20px;
+      margin: 10px 0 0;
+    }
+
+    .navbar {
+      background: #333;
+      color: white;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #555;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .product-item {
+      background: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .product-item img {
+      width: 100%;
+      max-height: 130px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .description {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Our Products</a>
+        <div class="dropdown-content">
+          <a href="school-uniforms.html">School Uniforms</a>
+          <a href="tshirts.html">&nbsp;&nbsp;T-Shirts</a>
+          <a href="trackpants.html">&nbsp;&nbsp;Trackpants</a>
+          <a href="tracksuits.html">&nbsp;&nbsp;Tracksuits</a>
+          <a href="jackets.html">&nbsp;&nbsp;Jackets</a>
+          <a href="customised-tshirts.html">Customised T-Shirts</a>
+          <a href="promotional-tshirts.html">&nbsp;&nbsp;Promotional T-Shirts</a>
+          <a href="event-tshirts.html">&nbsp;&nbsp;Event T-Shirts</a>
+        </div>
+      </li>
+      <li><a href="quote.html">Get a Quote</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <header>
+    <h1>Jackets</h1>
+    <p>Durable and stylish jackets for students</p>
+  </header>
+
+  <div class="product-gallery">
+    <div class="product-item">
+      <img src="images/j1.jpg" alt="Jacket 1">
+      <div class="description">Jacket 1 - ₹550</div>
+    </div>
+    <div class="product-item">
+      <img src="images/j2.jpg" alt="Jacket 2">
+      <div class="description">Jacket 2 - ₹580</div>
+    </div>
+    <div class="product-item">
+      <img src="images/j3.jpg" alt="Jacket 3">
+      <div class="description">Jacket 3 - ₹600</div>
+    </div>
+    <div class="product-item">
+      <img src="images/j4.jpg" alt="Jacket 4">
+      <div class="description">Jacket 4 - ₹620</div>
+    </div>
+  </div>
+</body>
+</html>
