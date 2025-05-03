@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modish Collection - School Uniforms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0055a5;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product {
+      flex: 1 1 45%;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    form button {
+      background-color: #0055a5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Modish Collection</h1>
+    <p>Smart. Stylish. School Ready.</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#quote">Get a Quote</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Modish Collection, we specialize in high-quality, comfortable, and affordable school uniforms. We cater to schools of all sizes and offer customization options to meet specific requirements.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Boys' Uniforms</h3>
+        <p>Shirts, pants, sweaters, and more for boys of all school levels.</p>
+      </div>
+      <div class="product">
+        <h3>Girls' Uniforms</h3>
+        <p>Skirts, tunics, blouses, sweaters, and full sets for all age groups.</p>
+      </div>
+      <div class="product">
+        <h3>Accessories</h3>
+        <p>Belts, ties, socks, caps, and school-approved extras.</p>
+      </div>
+      <div class="product">
+        <h3>Promotional & Customized Shirts</h3>
+        <p>Custom-printed t-shirts for school events, teams, and branding needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote">
+    <h2>Get a Quote</h2>
+    <form action="mailto:jahanvisingla2708@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="school" placeholder="School Name">
+      <textarea name="items" placeholder="What items do you need? Include quantity and size info." required></textarea>
+      <textarea name="message" placeholder="Additional details (optional)"></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:jahanvisingla2708@gmail.com">jahanvisingla2708@gmail.com</a></p>
+    <p>Phone: <a href="tel:6283902892">6283902892</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Modish Collection. All rights reserved.</p>
+  </footer>
+</body>
+</html>
