@@ -3,67 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Customised T-Shirts | Modish Collection</title>
+  <title>Customised T-Shirts - Modish Collection</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .category-section {
+      margin: 40px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+
+    .category-section h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-item {
+      background: white;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .description {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-
-  <header class="sub-header">
+  <header>
     <h1>Customised T-Shirts</h1>
-    <p>Promotional, Printed, and Logo Embroidered Tees for Schools and Events</p>
+    <p>Explore our printed and logo-embroidered promotional shirts</p>
   </header>
 
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#printed">Printed T-Shirts</a></li>
-      <li><a href="#embroidered">Logo Embroidered</a></li>
-      <li><a href="#event">Event/Corporate Shirts</a></li>
-    </ul>
-  </nav>
-
-  <section class="products-gallery">
-    <h2 id="printed">Printed T-Shirts</h2>
+  <div class="category-section">
+    <h2>Printed T-Shirts</h2>
     <div class="gallery">
-      <div class="product">
-        <img src="images/pt1.jpg" alt="Printed T-Shirt 1">
-        <div class="desc">Basic Printed Tee<br><strong>₹220</strong></div>
+      <div class="gallery-item">
+        <img src="images/pt1.jpg" alt="Printed T-Shirt 1" />
+        <div class="description">Printed T-Shirt 1 - ₹350</div>
       </div>
-      <div class="product">
-        <img src="images/pt2.jpg" alt="Printed T-Shirt 2">
-        <div class="desc">Custom Logo Tee<br><strong>₹250</strong></div>
+      <div class="gallery-item">
+        <img src="images/pt2.jpg" alt="Printed T-Shirt 2" />
+        <div class="description">Printed T-Shirt 2 - ₹370</div>
       </div>
     </div>
+  </div>
 
-    <h2 id="embroidered">Logo Embroidered Shirts</h2>
+  <div class="category-section">
+    <h2>Logo Embroidered Shirts</h2>
     <div class="gallery">
-      <div class="product">
-        <img src="images/emb1.jpg" alt="Embroidered Shirt 1">
-        <div class="desc">Polo with Logo<br><strong>₹270</strong></div>
+      <div class="gallery-item">
+        <img src="images/logo1.jpg" alt="Embroidered Shirt 1" />
+        <div class="description">Logo Shirt 1 - ₹450</div>
       </div>
-      <div class="product">
-        <img src="images/emb2.jpg" alt="Embroidered Shirt 2">
-        <div class="desc">Cotton Embroidered Shirt<br><strong>₹290</strong></div>
+      <div class="gallery-item">
+        <img src="images/logo2.jpg" alt="Embroidered Shirt 2" />
+        <div class="description">Logo Shirt 2 - ₹470</div>
       </div>
     </div>
+  </div>
 
-    <h2 id="event">Event/Corporate Shirts</h2>
+  <div class="category-section">
+    <h2>Event/Corporate Shirts</h2>
     <div class="gallery">
-      <div class="product">
-        <img src="images/event1.jpg" alt="Event Shirt 1">
-        <div class="desc">Team Event Shirt<br><strong>₹300</strong></div>
+      <div class="gallery-item">
+        <img src="images/event1.jpg" alt="Event Shirt 1" />
+        <div class="description">Event Shirt 1 - ₹550</div>
       </div>
-      <div class="product">
-        <img src="images/event2.jpg" alt="Event Shirt 2">
-        <div class="desc">Corporate Promotion Shirt<br><strong>₹320</strong></div>
+      <div class="gallery-item">
+        <img src="images/event2.jpg" alt="Event Shirt 2" />
+        <div class="description">Event Shirt 2 - ₹570</div>
       </div>
     </div>
-  </section>
-
-  <footer>
-    <p>Contact us: jahanvisingla2708@gmail.com | 6283902892</p>
-    <p>Modish Collection, Ludhiana</p>
-  </footer>
-
+  </div>
 </body>
 </html>
