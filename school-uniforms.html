@@ -13,11 +13,28 @@
       background-color: #f8f8f8;
     }
 
+    header {
+      background: url('Untitled design.png') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 20px;
+      margin: 10px 0 0;
+    }
+
     .navbar {
       background: #444;
       color: white;
       padding: 10px 0;
-      position: fixed;
+      position: sticky;
       top: 0;
       width: 100%;
       z-index: 1000;
@@ -29,6 +46,7 @@
       list-style: none;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     .navbar li {
@@ -63,18 +81,6 @@
 
     .dropdown:hover .dropdown-content {
       display: block;
-    }
-
-    .spacer {
-      height: 50px;
-    }
-
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      margin-top: 50px;
     }
 
     .category-section {
@@ -127,7 +133,12 @@
         <a href="#" class="dropbtn">Our Products</a>
         <div class="dropdown-content">
           <a href="school-uniforms.html">School Uniforms</a>
+          <a href="tshirts.html">&nbsp;&nbsp;T-Shirts</a>
+          <a href="trackpants.html">&nbsp;&nbsp;Trackpants</a>
+          <a href="tracksuits.html">&nbsp;&nbsp;Tracksuits</a>
+          <a href="jackets.html">&nbsp;&nbsp;Jackets</a>
           <a href="customised-tshirts.html">Customised T-Shirts</a>
+          <a href="promotional-tshirts.html">&nbsp;&nbsp;Promotional T-Shirts</a>
         </div>
       </li>
       <li><a href="quote.html">Get a Quote</a></li>
@@ -135,23 +146,39 @@
     </ul>
   </div>
 
-  <div class="spacer"></div>
-
   <header>
     <h1>School Uniforms</h1>
-    <p>Explore our categories of school uniforms</p>
+    <p>Explore all our schoolwear categories below</p>
   </header>
 
   <div class="category-section">
-    <h2>School T-Shirts</h2>
+    <h2>T-Shirts</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="images/t1.jpg" alt="T-Shirt 1" />
+        <img src="images/t1.jpg" alt="T-Shirt 1">
         <div class="description">T-Shirt 1 - ₹250</div>
       </div>
       <div class="gallery-item">
-        <img src="images/t2.jpg" alt="T-Shirt 2" />
+        <img src="images/t2.jpg" alt="T-Shirt 2">
         <div class="description">T-Shirt 2 - ₹270</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section">
+    <h2>Trackpants</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/tp1.jpg" alt="Trackpant 1">
+        <div class="description">Trackpant 1 - ₹300</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/tp3.jpg" alt="Trackpant 3">
+        <div class="description">Trackpant 3 - ₹320</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/tp4.jpg" alt="Trackpant 4">
+        <div class="description">Trackpant 4 - ₹330</div>
       </div>
     </div>
   </div>
@@ -160,34 +187,16 @@
     <h2>Tracksuits</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="images/tcs1.jpg" alt="Tracksuit 1" />
-        <div class="description">Tracksuit 1 - ₹800</div>
+        <img src="images/ts1.jpg" alt="Tracksuit 1">
+        <div class="description">Tracksuit 1 - ₹450</div>
       </div>
       <div class="gallery-item">
-        <img src="images/ts1.jpg" alt="Tracksuit 2" />
-        <div class="description">Tracksuit 2 - ₹850</div>
+        <img src="images/ts2.jpg" alt="Tracksuit 2">
+        <div class="description">Tracksuit 2 - ₹470</div>
       </div>
       <div class="gallery-item">
-        <img src="images/ts2.jpg" alt="Tracksuit 3" />
-        <div class="description">Tracksuit 3 - ₹900</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="category-section">
-    <h2>Track Pants</h2>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="images/tp1.jpg" alt="Track Pant 1" />
-        <div class="description">Track Pant 1 - ₹350</div>
-      </div>
-      <div class="gallery-item">
-        <img src="images/tp3.jpg" alt="Track Pant 2" />
-        <div class="description">Track Pant 2 - ₹370</div>
-      </div>
-      <div class="gallery-item">
-        <img src="images/tp4.jpg" alt="Track Pant 3" />
-        <div class="description">Track Pant 3 - ₹390</div>
+        <img src="images/tcs1.jpg" alt="Tracksuit Custom">
+        <div class="description">Tracksuit Custom - ₹490</div>
       </div>
     </div>
   </div>
