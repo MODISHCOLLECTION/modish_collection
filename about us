@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Modish Collection</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: url('Untitled design.png') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 20px;
+      margin: 10px 0 0;
+    }
+
+    .navbar {
+      background: #444;
+      color: white;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #666;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #555;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .about-container h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .about-container p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Our Products</a>
+        <div class="dropdown-content">
+          <a href="school-uniforms.html">School Uniforms</a>
+          <a href="tshirts.html">&nbsp;&nbsp;T-Shirts</a>
+          <a href="trackpants.html">&nbsp;&nbsp;Trackpants</a>
+          <a href="tracksuits.html">&nbsp;&nbsp;Tracksuits</a>
+          <a href="jackets.html">&nbsp;&nbsp;Jackets</a>
+          <a href="customised-tshirts.html">Customised T-Shirts</a>
+          <a href="promotional-tshirts.html">&nbsp;&nbsp;Promotional T-Shirts</a>
+          <a href="event-shirts.html">&nbsp;&nbsp;Event Shirts</a>
+        </div>
+      </li>
+      <li><a href="quote.html">Get a Quote</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <header>
+    <h1>Modish Collection</h1>
+    <p>Delivering Quality Uniforms & Customized Wear Across India</p>
+  </header>
+
+  <div class="about-container">
+    <h2>About Us</h2>
+    <p>
+      At Modish Collection, we specialize in manufacturing and supplying high-quality school uniforms and customized shirts tailored to your needs. Based in Ludhiana, our state-of-the-art facility ensures precision, comfort, and style in every product.
+    </p>
+    <p>
+      Our team brings together years of experience in textile design, production, and customer service. We believe in delivering not just uniforms, but identity and confidence to every student and professional.
+    </p>
+    <p>
+      We cater to schools, corporate events, promotional campaigns, and more, offering a variety of fabrics, styles, and printing options. With pan-India delivery and prompt customer support, we ensure seamless service from order to delivery.
+    </p>
+  </div>
+
+</body>
+</html>
