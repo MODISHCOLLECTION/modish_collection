@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Customised T-Shirts - Modish Collection</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #f8f8f8;
     }
 
@@ -17,7 +16,7 @@
       background: url('Untitled design.png') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 100px 20px 60px;
+      padding: 80px 20px;
     }
 
     header h1 {
@@ -26,7 +25,7 @@
     }
 
     header p {
-      font-size: 20px;
+      font-size: 18px;
       margin: 10px 0 0;
     }
 
@@ -36,7 +35,6 @@
       padding: 10px 0;
       position: sticky;
       top: 0;
-      width: 100%;
       z-index: 1000;
     }
 
@@ -69,8 +67,12 @@
       display: none;
       position: absolute;
       background-color: #555;
-      min-width: 160px;
+      min-width: 200px;
       z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
     .dropdown-content a {
@@ -79,21 +81,16 @@
       display: block;
     }
 
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
     .category-section {
+      max-width: 1100px;
       margin: 40px auto;
-      max-width: 1000px;
       padding: 0 20px;
     }
 
     .category-section h2 {
       border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
       font-size: 24px;
+      margin-bottom: 20px;
     }
 
     .gallery {
@@ -112,7 +109,6 @@
 
     .gallery-item img {
       width: 100%;
-      height: auto;
       max-height: 120px;
       object-fit: cover;
       border-radius: 4px;
@@ -122,9 +118,28 @@
       margin-top: 8px;
       font-size: 13px;
     }
+
+    .show-more {
+      display: block;
+      margin-top: 15px;
+      text-align: right;
+    }
+
+    .show-more a {
+      text-decoration: none;
+      background: #444;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+
+    .show-more a:hover {
+      background: #666;
+    }
   </style>
 </head>
 <body>
+
   <div class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -147,21 +162,32 @@
   </div>
 
   <header>
-    <h1>Customised T-Shirts</h1>
-    <p>Explore our customizable t-shirt range</p>
+    <h1>Modish Collection</h1>
+    <p>Smart Styles, Smarter Uniforms</p>
   </header>
 
   <div class="category-section">
     <h2>T-Shirts</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="images/ct1.jpg" alt="Custom T-Shirt 1">
-        <div class="description">Custom T-Shirt 1 - ₹280</div>
+        <img src="images/t1.jpg" alt="T-Shirt 1">
+        <div class="description">T-Shirt 1 - ₹250</div>
       </div>
       <div class="gallery-item">
-        <img src="images/ct2.jpg" alt="Custom T-Shirt 2">
-        <div class="description">Custom T-Shirt 2 - ₹300</div>
+        <img src="images/t2.jpg" alt="T-Shirt 2">
+        <div class="description">T-Shirt 2 - ₹270</div>
       </div>
+      <div class="gallery-item">
+        <img src="images/ts1.jpg" alt="T-Shirt 3">
+        <div class="description">T-Shirt 3 - ₹260</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/ts2.jpg" alt="T-Shirt 4">
+        <div class="description">T-Shirt 4 - ₹280</div>
+      </div>
+    </div>
+    <div class="show-more">
+      <a href="tshirts.html">Show More</a>
     </div>
   </div>
 
@@ -169,15 +195,26 @@
     <h2>Promotional T-Shirts</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="images/pts1.jpg" alt="Promo T-Shirt 1">
-        <div class="description">Promo T-Shirt 1 - ₹230</div>
+        <img src="images/promo1.jpg" alt="Promotional T-Shirt 1">
+        <div class="description">Promo Tee 1 - ₹220</div>
       </div>
       <div class="gallery-item">
-        <img src="images/pts2.jpg" alt="Promo T-Shirt 2">
-        <div class="description">Promo T-Shirt 2 - ₹250</div>
+        <img src="images/promo2.jpg" alt="Promotional T-Shirt 2">
+        <div class="description">Promo Tee 2 - ₹240</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/promo3.jpg" alt="Promotional T-Shirt 3">
+        <div class="description">Promo Tee 3 - ₹230</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/promo4.jpg" alt="Promotional T-Shirt 4">
+        <div class="description">Promo Tee 4 - ₹260</div>
       </div>
     </div>
+    <div class="show-more">
+      <a href="promotional-tshirts.html">Show More</a>
+    </div>
   </div>
+
 </body>
 </html>
-
