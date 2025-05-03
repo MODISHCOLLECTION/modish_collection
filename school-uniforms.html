@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>School Uniforms - Modish Collection</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #f8f8f8;
     }
 
@@ -17,7 +16,7 @@
       background: url('Untitled design.png') center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 100px 20px 60px;
+      padding: 80px 20px;
     }
 
     header h1 {
@@ -26,7 +25,7 @@
     }
 
     header p {
-      font-size: 20px;
+      font-size: 18px;
       margin: 10px 0 0;
     }
 
@@ -36,7 +35,6 @@
       padding: 10px 0;
       position: sticky;
       top: 0;
-      width: 100%;
       z-index: 1000;
     }
 
@@ -69,8 +67,12 @@
       display: none;
       position: absolute;
       background-color: #555;
-      min-width: 160px;
+      min-width: 200px;
       z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
     .dropdown-content a {
@@ -79,21 +81,16 @@
       display: block;
     }
 
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
     .category-section {
+      max-width: 1100px;
       margin: 40px auto;
-      max-width: 1000px;
       padding: 0 20px;
     }
 
     .category-section h2 {
       border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
       font-size: 24px;
+      margin-bottom: 20px;
     }
 
     .gallery {
@@ -112,7 +109,6 @@
 
     .gallery-item img {
       width: 100%;
-      height: auto;
       max-height: 120px;
       object-fit: cover;
       border-radius: 4px;
@@ -122,9 +118,28 @@
       margin-top: 8px;
       font-size: 13px;
     }
+
+    .show-more {
+      display: block;
+      margin-top: 15px;
+      text-align: right;
+    }
+
+    .show-more a {
+      text-decoration: none;
+      background: #444;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+
+    .show-more a:hover {
+      background: #666;
+    }
   </style>
 </head>
 <body>
+
   <div class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -147,8 +162,8 @@
   </div>
 
   <header>
-    <h1>School Uniforms</h1>
-    <p>Explore all our schoolwear categories below</p>
+    <h1>Modish Collection</h1>
+    <p>Smart Styles, Smarter Uniforms</p>
   </header>
 
   <div class="category-section">
@@ -162,6 +177,17 @@
         <img src="images/t2.jpg" alt="T-Shirt 2">
         <div class="description">T-Shirt 2 - ₹270</div>
       </div>
+      <div class="gallery-item">
+        <img src="images/ts1.jpg" alt="T-Shirt 3">
+        <div class="description">T-Shirt 3 - ₹260</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/ts2.jpg" alt="T-Shirt 4">
+        <div class="description">T-Shirt 4 - ₹280</div>
+      </div>
+    </div>
+    <div class="show-more">
+      <a href="tshirts.html">Show More</a>
     </div>
   </div>
 
@@ -173,13 +199,20 @@
         <div class="description">Trackpant 1 - ₹300</div>
       </div>
       <div class="gallery-item">
+        <img src="images/tp2.jpg" alt="Trackpant 2">
+        <div class="description">Trackpant 2 - ₹320</div>
+      </div>
+      <div class="gallery-item">
         <img src="images/tp3.jpg" alt="Trackpant 3">
-        <div class="description">Trackpant 3 - ₹320</div>
+        <div class="description">Trackpant 3 - ₹330</div>
       </div>
       <div class="gallery-item">
         <img src="images/tp4.jpg" alt="Trackpant 4">
-        <div class="description">Trackpant 4 - ₹330</div>
+        <div class="description">Trackpant 4 - ₹340</div>
       </div>
+    </div>
+    <div class="show-more">
+      <a href="trackpants.html">Show More</a>
     </div>
   </div>
 
@@ -195,10 +228,18 @@
         <div class="description">Tracksuit 2 - ₹470</div>
       </div>
       <div class="gallery-item">
-        <img src="images/tcs1.jpg" alt="Tracksuit Custom">
-        <div class="description">Tracksuit Custom - ₹490</div>
+        <img src="images/tcs1.jpg" alt="Tracksuit 3">
+        <div class="description">Tracksuit 3 - ₹490</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/tcs2.jpg" alt="Tracksuit 4">
+        <div class="description">Tracksuit 4 - ₹500</div>
       </div>
     </div>
+    <div class="show-more">
+      <a href="tracksuits.html">Show More</a>
+    </div>
   </div>
+
 </body>
 </html>
