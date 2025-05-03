@@ -1,0 +1,71 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+.hero {
+  background: url('../images/school-kids-bg.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #333;
+  justify-content: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #575757;
+}
+.dropdown-content,
+.sub-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 200px;
+  z-index: 1;
+}
+.dropdown-content a,
+.sub-dropdown a {
+  padding: 10px 15px;
+}
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover .sub-dropdown {
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #555;
+}
+.sub-dropdown {
+  left: 100%;
+  top: 0;
+}
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+}
