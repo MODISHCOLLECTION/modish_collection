@@ -158,7 +158,7 @@ header.hero {
     top: 60px;
     left: 0;
     padding: 10px 0;
-  
+  }
 
   .nav-menu.active {
     display: flex;
