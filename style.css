@@ -160,23 +160,32 @@ footer {
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   justify-content: center;
-  margin-bottom: 40px;
 }
 
 .product {
   width: 200px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px; /* or any consistent height */
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
 
 .product img {
+  height: 150px;
+  object-fit: cover;
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 4px;
 }
+
 
 .desc {
   margin-top: 10px;
