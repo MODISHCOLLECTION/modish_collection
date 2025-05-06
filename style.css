@@ -1,173 +1,225 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modish Collection - Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-    }
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #000;
-      padding: 10px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    .logo img {
-      height: 60px;
-      width: auto;
-    }
+/* NAVBAR STYLES */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    .nav-menu {
-      display: flex;
-      gap: 15px;
-    }
+.logo img {
+  height: 60px;
+  width: auto;
+}
 
-    .nav-menu a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-    }
+/* NAV MENU */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-    .nav-menu a:hover {
-      background-color: #444;
-    }
+.nav-menu a,
+.drop-trigger {
+  color: white;
+  padding: 10px 12px;
+  font-weight: 500;
+}
 
-    .hero {
-      background: url('images/Untitled design.png') center/cover no-repeat;
-      height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
+.nav-menu a:hover,
+.dropdown-content a:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      border-radius: 10px;
-    }
+/* HAMBURGER MENU (for mobile) */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
 
-    .category-section {
-      padding: 40px 20px;
-      text-align: center;
-    }
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
 
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 999;
+  border-radius: 4px;
+  overflow: hidden;
+}
 
-    .category-item {
-      background: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      text-decoration: none;
-      color: black;
-      transition: transform 0.2s ease;
-    }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-    .category-item:hover {
-      transform: translateY(-5px);
-    }
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
 
-    .category-item img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      display: block;
-    }
+/* RESPONSIVE NAV */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
 
-    .category-item p {
-      margin: 10px;
-      font-weight: bold;
-    }
+  .nav-menu.active {
+    display: flex;
+  }
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
+  .hamburger {
+    display: block;
+  }
 
-  <header class="navbar">
-    <a href="index.html" class="logo"><img src="images/logo.png" alt="Modish Collection Logo" /></a>
-    <nav class="nav-menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="school-uniforms.html">School Uniforms</a>
-      <a href="tshirts.html">T-Shirts</a>
-      <a href="quote.html">Get a Quote</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+  .dropdown-content {
+    position: static;
+    width: 100%;
+  }
+}
 
-  <section class="hero">
-    <div class="overlay">
-      <h1>Modish Collection</h1>
-      <p>We Craft School Uniforms with Comfort and Style</p>
-    </div>
-  </section>
+/* HERO HEADER */
+header.hero {
+  background: url('images/Untitled design.png') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
 
-  <section class="category-section">
-    <h2>Our Product Categories</h2>
-    <div class="category-grid">
-      <a href="school-uniforms.html" class="category-item">
-        <img src="images/school-uniform.jpg" alt="School Uniforms" />
-        <p>School Uniforms</p>
-      </a>
-      <a href="tshirts.html" class="category-item">
-        <img src="images/t1.jpg" alt="T-Shirts" />
-        <p>T-Shirts</p>
-      </a>
-      <a href="trackpants.html" class="category-item">
-        <img src="images/trackpants.jpg" alt="Trackpants" />
-        <p>Trackpants</p>
-      </a>
-      <a href="tracksuits.html" class="category-item">
-        <img src="images/tracksuit.jpg" alt="Tracksuits" />
-        <p>Tracksuits</p>
-      </a>
-      <a href="jackets.html" class="category-item">
-        <img src="images/jacket.jpg" alt="Jackets" />
-        <p>Jackets</p>
-      </a>
-      <a href="customised-tshirts.html" class="category-item">
-        <img src="images/custom.jpg" alt="Customised T-Shirts" />
-        <p>Customised T-Shirts</p>
-      </a>
-      <a href="promotional-tshirts.html" class="category-item">
-        <img src="images/promo.jpg" alt="Promotional T-Shirts" />
-        <p>Promotional T-Shirts</p>
-      </a>
-      <a href="event-shirts.html" class="category-item">
-        <img src="images/event.jpg" alt="Event Shirts" />
-        <p>Event Shirts</p>
-      </a>
-    </div>
-  </section>
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+}
 
-  <footer>
-    <p>Contact us: jahanvisingla2708@gmail.com | 6283902892</p>
-    <p>Manufacturing Unit: Ludhiana, India</p>
-  </footer>
+/* CATEGORY GRID FOR HOMEPAGE */
+.categories-section {
+  padding: 40px 20px;
+  text-align: center;
+}
 
-</body>
-</html>
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.category-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+}
+
+.category-item a {
+  display: block;
+  color: inherit;
+}
+
+.category-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.category-name {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* PRODUCTS GRID (e.g., subcategory pages) */
+.product-gallery {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.description {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* SUB HEADER */
+.sub-header {
+  background-color: #003366;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
