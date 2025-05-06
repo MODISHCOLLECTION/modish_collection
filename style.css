@@ -29,7 +29,7 @@ header.hero {
   position: sticky;
   top: 0;
   z-index: 1000;
-  flex-wrap: wrap;
+  
 }
 .logo img {
   height: 40px;
@@ -38,8 +38,9 @@ header.hero {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 15px;
-  flex-wrap: wrap;
+ 
 }
 
 .nav-links a {
@@ -52,10 +53,11 @@ header.hero {
   background-color: #444;
 }
 .hamburger {
+  display: none;
   font-size: 26px;
   color: white;
+  margin-left: auto;
   cursor: pointer;
-  display: none;
 }
 .navbar ul {
   list-style: none;
@@ -131,6 +133,7 @@ header.hero {
     flex-direction: column;
     width: 100%;
     background-color: #333;
+        margin-top: 10px;
   }
 
   .nav-links.active {
@@ -143,8 +146,6 @@ header.hero {
 
   .dropdown-content {
     position: static;
-    box-shadow: none;
-    background: #444;
   }
 }
 
