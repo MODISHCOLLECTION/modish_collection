@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Modish Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="Modish Collection Logo" />
+  </a>
+  <span class="hamburger" onclick="toggleMenu()">☰</span>
+  <nav class="nav-menu" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <div class="dropdown">
+      <a href="#">Our Products</a>
+      <div class="dropdown-content">
+        <a href="school-uniforms.html">School Uniforms</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="trackpants.html">Trackpants</a>
+        <a href="tracksuits.html">Tracksuits</a>
+        <a href="jackets.html">Jackets</a>
+        <a href="customised-tshirts.html">Customised T-Shirts</a>
+        <a href="promotional-tshirts.html">Promotional T-Shirts</a>
+        <a href="event-shirts.html">Event Shirts</a>
+      </div>
+    </div>
+    <a href="get-a-quote.html">Get a Quote</a>
+    <a href="contact.html" class="active">Contact Us</a>
+  </nav>
+</header>
+
+<header class="hero">
+  <div class="overlay">
+    <h1>Contact Us</h1>
+    <p>We’re here to help you with uniforms, T-shirts & bulk orders.</p>
+  </div>
+</header>
+
+<main style="padding: 40px 20px; max-width: 700px; margin: auto;">
+  <h2 style="text-align: center; font-size: 28px;">Get in Touch</h2>
+  <p style="text-align: center;">Have questions or need more information? Reach out to us!</p>
+
+  <div style="margin-top: 40px;">
+    <p><strong>Email:</strong> <a href="mailto:jahanvisingla2708@gmail.com">jahanvisingla2708@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+916283902892">+91 62839 02892</a></p>
+    <p><strong>Manufacturing Unit:</strong> Ludhiana, Punjab, India</p>
+  </div>
+
+  <div style="margin-top: 40px;">
+    <form action="https://formspree.io/f/mpwddbrb" method="POST" style="display: grid; gap: 15px;">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" style="padding: 12px; background-color: #003366; color: white; border: none; cursor: pointer; border-radius: 6px;">Send Message</button>
+    </form>
+  </div>
+</main>
+
+<footer style="margin-top: 60px; background: #111; color: white; text-align: center; padding: 20px;">
+  <p>© 2025 Modish Collection. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
