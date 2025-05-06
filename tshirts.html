@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>School T-Shirts - Modish Collection</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    header {
-     background: url('images/background.webp') center/cover no-repeat;
+    .sub-header {
+      background: url('images/background.webp') center/cover no-repeat;
       color: black;
       text-align: center;
-      padding: 100px 200px;
+      padding: 100px 20px;
     }
-    header h1 {
+
+    .sub-header h1 {
       font-size: 48px;
       margin: 0;
     }
 
-    header p {
+    .sub-header p {
       font-size: 20px;
-      margin: 10px 0 0;
+      margin-top: 10px;
     }
-
-
 
     .product-gallery {
       max-width: 1000px;
@@ -68,60 +58,65 @@
   </style>
 </head>
 <body>
-<header class="navbar">
-  <a href="index.html" class="logo">
-    <img src="images/logo.png" alt="Modish Collection Logo" />
-  </a>
-  <span class="hamburger" onclick="toggleMenu()">☰</span>
-  <nav class="nav-menu" id="navMenu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-           <div class="dropdown">
-        <a href="#" >Our Products</a>
-        <div class="dropdown-content">
-        <a href="school-uniforms.html">School Uniforms</a>
-        <a href="tshirts.html">T-Shirts</a>
-        <a href="trackpants.html">Trackpants</a>
-        <a href="tracksuits.html">Tracksuits</a>
-        <a href="jackets.html">Jackets</a>
-        <a href="customised-tshirts.html">Customised T-Shirts</a>
-        <a href="promotional-tshirts.html">Promotional T-Shirts</a>
-        <a href="event-shirts.html">Event Shirts</a>
-      </div>
-    </div>
-    <a href="quote.html">Get a Quote</a>
-    <a href="contact.html">Contact Us</a>
-  </nav>
-</header>
 
-  <header>
-    <h1>School T-Shirts</h1>
-    <p>Quality school tees designed for comfort and durability</p>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Modish Collection Logo" />
+    </a>
+    <span class="hamburger" onclick="toggleMenu()">☰</span>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="dropdown">
+        <a href="#" class="drop-trigger">Our Products</a>
+        <div class="dropdown-content">
+          <a href="school-uniforms.html">School Uniforms</a>
+          <a href="tshirts.html">T-Shirts</a>
+          <a href="trackpants.html">Trackpants</a>
+          <a href="tracksuits.html">Tracksuits</a>
+          <a href="jackets.html">Jackets</a>
+          <a href="customised-tshirts.html">Customised T-Shirts</a>
+          <a href="promotional-tshirts.html">Promotional T-Shirts</a>
+          <a href="event-shirts.html">Event Shirts</a>
+        </div>
+      </div>
+      <a href="quote.html">Get a Quote</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
   </header>
 
+  <!-- Subpage Header -->
+  <div class="sub-header">
+    <h1>School T-Shirts</h1>
+    <p>Quality school tees designed for comfort and durability</p>
+  </div>
+
+  <!-- Product Gallery -->
   <div class="product-gallery">
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="images/t1.jpg" alt="T-Shirt 1">
+        <img src="images/t1.jpg" alt="T-Shirt 1" />
         <div class="description">T-Shirt 1 - ₹250</div>
       </div>
       <div class="gallery-item">
-        <img src="images/t2.jpg" alt="T-Shirt 2">
+        <img src="images/t2.jpg" alt="T-Shirt 2" />
         <div class="description">T-Shirt 2 - ₹270</div>
       </div>
     </div>
   </div>
-  
-  <footer id="contact">
+
+  <!-- Footer -->
+  <footer>
     <p>Contact us: jahanvisingla2708@gmail.com | 6283902892</p>
     <p>Manufacturing Unit: Ludhiana, India</p>
   </footer>
 
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById("navMenu");
-    nav.classList.toggle("active");
-  }
-</script>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navMenu");
+      nav.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
