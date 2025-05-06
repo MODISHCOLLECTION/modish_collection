@@ -35,10 +35,22 @@ header.hero {
   height: 40px;
   width: auto;
 }
-.menu-container {
+/* Navigation Menu */
+.nav-menu {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
+}
+
+/* Navigation Links */
+.nav-menu a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  background-color: #444;
 }
 
 .nav-links {
@@ -140,10 +152,9 @@ header.hero {
         margin-top: 10px;
   }
 
-  .nav-links.active {
+  .nav-menu.active {
     display: flex;
   }
-
   .hamburger {
     display: block;
   }
