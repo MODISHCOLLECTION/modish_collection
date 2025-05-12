@@ -127,14 +127,14 @@ a {
 }
 
 /* HERO HEADER */
-.hero {
+header.hero {
   position: relative;
   height: 400px; /* Adjust as needed */
   background: url('images/hero-bg.jpg') no-repeat center center;
   background-size: cover;
 }
 
-.hero .overlay {
+header.hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -149,12 +149,12 @@ a {
   padding: 20px;
 }
 
-.hero h1 {
+header.hero h1 {
   font-size: 40px; /* Adjust as needed */
   font-weight: bold;
 }
 
-.hero p {
+header.hero p {
   font-size: 18px; /* Adjust as needed */
 }
 
