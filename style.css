@@ -150,7 +150,6 @@ header.hero::before {
   z-index: 1;
 }
 
-
 header.hero .overlay {
   position: relative;
   z-index: 2;
@@ -169,8 +168,6 @@ header.hero p {
   margin-top: 15px;
   opacity: 0.9;
 }
-
-
 
 /* CATEGORY GRID FOR HOMEPAGE */
 .categories-section {
@@ -201,7 +198,6 @@ header.hero p {
 
 .category-item a {
   display: block;
-  color: inherit;
 }
 
 .category-item img {
@@ -254,8 +250,13 @@ footer {
   background: #111;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
 }
 
 /* SUB HEADER */
@@ -264,4 +265,5 @@ footer {
   color: white;
   padding: 40px 20px;
   text-align: center;
+  border-bottom: 4px solid #1a4d80;
 }
