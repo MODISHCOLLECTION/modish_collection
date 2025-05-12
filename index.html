@@ -24,13 +24,18 @@ margin: 0 auto;
 }
 
 .subcategory-item {
-text-align: center;
-background: white;
-border: 1px solid #ddd;
-padding: 10px;
-border-radius: 8px;
-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
-}
+ width: 250px;
+    height: 350px; /* Ensures the boxes are all the same height */
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures equal space between image and text */
+  }
 
 .subcategory-item img {
 width: 100%;
