@@ -127,22 +127,37 @@ a {
 }
 
 /* HERO HEADER */
-header.hero {
-  background: url('images/Untitled design.png') center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero {
   position: relative;
-  color: white;
-  text-align: center;
+  height: 400px; /* Adjust as needed */
+  background: url('images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  border-radius: 12px;
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
+
+.hero h1 {
+  font-size: 40px; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px; /* Adjust as needed */
+}
+
 
 /* CATEGORY GRID FOR HOMEPAGE */
 .categories-section {
