@@ -37,15 +37,12 @@ margin: 0 auto;
     justify-content: space-between; /* Ensures equal space between image and text */
   }
 
-.subcategory-item img {
-width: 100%;
-height: auto;
-display: block
-object-fit: cover;
-border-radius: 4px;
-margin-bottom: 6px;
-}
-
+ .product img {
+    width: 100%;          /* Make the image fit the container */
+    height: 200px;        /* Fixed height for all images */
+    object-fit: cover;    /* Ensures image maintains aspect ratio without stretching */
+    border-radius: 8px;
+  }
 .subcategory-item a {
 text-decoration: none;
 font-size: 14px;
